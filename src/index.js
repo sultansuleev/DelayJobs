@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Header from './Header/index';
+import Main from './Main/index';
+import SignO from './Main/Sign/index';
+import Footer from './Footer/index';
+import {BrowserRouter} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export function rend(){
+    
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <BrowserRouter>
+        <Fragment>
+            <Header />
+            <Main />
+            <Footer/>
+        </Fragment>
+    </BrowserRouter>
+    , document.getElementById('root'));
