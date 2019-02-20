@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {Head} from './style';
+import {Head, User} from './style';
 import {NavLink} from 'react-router-dom';
 
 export default class Header extends Component {
+
     scrolled = () =>{
     window.onscroll = function scrollFunc() {
         if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
@@ -32,11 +33,11 @@ export default class Header extends Component {
                     <div className="help">
                         <NavLink to="/Help">Помощь</NavLink>
                     </div>
-                    <div className="user">
+                    <User className="user" onClick={this.props.func}>
                         <div className="icon">
                             <img src="./assets/images/svg/user.svg" alt="user"/>
                         </div>
-                    </div>
+                    </User>
                 </div>
             </Head>
         );

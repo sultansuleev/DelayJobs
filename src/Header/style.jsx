@@ -98,6 +98,11 @@ const Head = styled.div `
     }
 `;
 
+const User = styled.div`
+
+`;
+
 export {
-    Head
+    Head,
+    User,
 };
