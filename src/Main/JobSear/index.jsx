@@ -7,8 +7,11 @@ export default  class JobSear extends Component {
           <Container>
               <UpperCon>
                   <div className="sear">
-                      <h2>Поиск вакансий: </h2>
+                      <h2>
+                          Поиск вакансий:
+                      </h2>
                       <input type="text" placeholder="Введите ключевое слово"/>
+                      <div className="underline"/>
                   </div>
                   <div className="sort">
 
