@@ -5,7 +5,6 @@ import {NavLink} from 'react-router-dom';
 export default class ModalAuth extends Component {
     render(){
         return(
-            <ModalHandle>
                 <Modal>
                     <div className="modal-left-con">
                         <img src="./assets/images/sign_bg.jpg"/>
@@ -31,8 +30,6 @@ export default class ModalAuth extends Component {
                         </div>
                     </div>
                 </Modal>
-                <div className="clearing"></div>
-            </ModalHandle>
         );
     }
 }

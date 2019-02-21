@@ -10,7 +10,7 @@ import Header from '../../Header/index';
 class Home extends Component{
     state = {
         isVisible: false,
-    }
+    };
     constructor(props){
         super(props);
         this.state = this.state = {
@@ -49,7 +49,6 @@ class Home extends Component{
             this.state.isLoading ? <ReactLoading type={'bars'} color={'white'} height={667} width={375}/> :
             <Fragment>
                 <MyHome onLoad={this.props.popUp}>
-                    <ModalAuth/>
                     <Container1/>
                     <Container2/>
                     <Container3 func={this.up}/>

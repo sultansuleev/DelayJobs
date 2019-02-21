@@ -9,14 +9,14 @@ import {BrowserRouter} from 'react-router-dom';
 class ContentGrand extends Component {
     state = {
         isVisible: false,
-    }
+    };
 
     popUpCalc = (e) => {
         this.setState({
             isVisible: !this.state.isVisible,
         });
         console.log(this.state.isVisible);
-    }
+    };
 
     render(){
         return(
@@ -27,7 +27,7 @@ class ContentGrand extends Component {
             </Fragment>
         );
     }
-};
+}
 
 ReactDOM.render(
     <BrowserRouter>

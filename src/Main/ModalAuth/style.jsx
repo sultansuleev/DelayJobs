@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 const ModalHandle = styled.div`
     width: 100%;
-    height: inherit;
+    height: 100%;
     margin: 0;
     display: block;
     justify-content: center;
     background: rgba(0, 0, 0, 0.7);
     position: relative;
-
+    float: right;
+    
 
     & .clearing {
         clear: both;
@@ -27,7 +28,7 @@ const Modal = styled.div`
     grid-template-columns: .6fr 1.4fr;
     background-color: rgba(255, 255, 255, 1.000);
     z-index: 9;
-    overflow: visible;
+    overflow: hidden;
 
     & .modal-left-con {
 
