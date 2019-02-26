@@ -1,16 +1,14 @@
 import React, {Component, Fragment} from 'react';
 import ReactLoading from 'react-loading';
-import ModalAuth from '../ModalAuth/index';
+import {NavLink} from 'react-router-dom';
+import Modal from '../Modal/index';
 import Container1 from './Container1/index';
 import Container2 from './Container2/index';
 import Container3 from './Container3/index';
 import {MyHome} from './style';
-import Header from '../../Header/index';
+import {ModalB} from '../Modal/style';
 
 class Home extends Component{
-    state = {
-        isVisible: false,
-    };
     constructor(props){
         super(props);
         this.state = this.state = {
@@ -33,22 +31,12 @@ class Home extends Component{
             }
     };
 
-    popUp(){
-        let isVis = Header.User;
-        isVis.addEventListener("click", function(){
-            this.setState({
-                isVisible: !this.state.isVisible,
-            });
-        });
-
-        console.log(this.state.isVisible);
-    }
-
     render(){
         return(
             this.state.isLoading ? <ReactLoading type={'bars'} color={'white'} height={667} width={375}/> :
             <Fragment>
                 <MyHome onLoad={this.props.popUp}>
+                    <Modal isVisible = {this.props.isVisible} hide={this.props.hide}/>
                     <Container1/>
                     <Container2/>
                     <Container3 func={this.up}/>

@@ -11,11 +11,11 @@ class Main extends Component{
     render(){
         return(
             <Switch>
-                <Route exact path = '/' render={() => <Home isVisible = {this.props.isVisible} />}/>
-                <Route path='/JobSear' render={() => <JobSear isVisible = {this.props.isVisible} />}/>
-                <Route path='/EmlpoySear' render={() => <EmploySear isVisible = {this.props.isVisible} />}/>
-                <Route path='/About' render={() => <About isVisible = {this.props.isVisible} />}/>
-                <Route path='/Help' render={() => <Help isVisible = {this.props.isVisible} />}/>
+                <Route exact path = '/' render={() => <Home isVisible = {this.props.isVisible} hide={this.props.hide}/>}/>
+                <Route path='/JobSear' render={() => <JobSear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
+                <Route path='/EmlpoySear' render={() => <EmploySear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
+                <Route path='/About' render={() => <About isVisible = {this.props.isVisible}  hide={this.props.hide}/>}/>
+                <Route path='/Help' render={() => <Help isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
             </Switch>
         );
     }

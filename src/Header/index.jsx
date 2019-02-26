@@ -12,7 +12,7 @@ export default class Header extends Component {
             document.getElementById("header").style.height = "7.606875em";
         }
     }
-}
+};
 
     render(){
         return(

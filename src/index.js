@@ -11,18 +11,22 @@ class ContentGrand extends Component {
         isVisible: false,
     };
 
-    popUpCalc = (e) => {
+    modalShow = () => {
         this.setState({
-            isVisible: !this.state.isVisible,
+            isVisible: true,
         });
-        console.log(this.state.isVisible);
     };
 
+    modalHide = () => {
+        this.setState({
+            isVisible: false,
+        });
+    };
     render(){
         return(
             <Fragment>
-                <Header func = {this.popUpCalc}/>
-                <Main isVisible = {this.state.isVisible}/>
+                <Header func = {this.modalShow}/>
+                <Main isVisible = {this.state.isVisible} hide={this.modalHide}/>
                 <Footer/>
             </Fragment>
         );
