@@ -1,12 +1,11 @@
 import React, {Component, Fragment} from 'react';
 import ReactLoading from 'react-loading';
-import {NavLink} from 'react-router-dom';
+import Helmet from 'react-helmet';
 import Modal from '../Modal/index';
 import Container1 from './Container1/index';
 import Container2 from './Container2/index';
 import Container3 from './Container3/index';
 import {MyHome} from './style';
-import {ModalB} from '../Modal/style';
 
 class Home extends Component{
     constructor(props){
@@ -35,6 +34,9 @@ class Home extends Component{
         return(
             this.state.isLoading ? <ReactLoading type={'bars'} color={'white'} height={667} width={375}/> :
             <Fragment>
+                <Helmet>
+                    <title>Главная Страница</title>
+                </Helmet>
                 <MyHome onLoad={this.props.popUp}>
                     <Modal isVisible = {this.props.isVisible} hide={this.props.hide}/>
                     <Container1/>

@@ -21,16 +21,14 @@ export  default class Modal extends Component {
                                 </h2>
                             </div>
 
-                            <div className="inForm">
-                                <form>
-                                    <input type="text" placeholder="EMAIL OR LOGIN"/>
-                                    <input type="password" placeholder="PASSWORD"/>
-                                    <input type="submit" value="ВХОД"/>
-                                    <NavLink to="#" >
+                            <form className="inForm">
+                                <input type="text" placeholder="EMAIL OR LOGIN" className="inStream inputtext"/>
+                                <input type="password" placeholder="PASSWORD" className="inStream inputtext"/>
+                                <input type="submit" value="ВХОД" className="inStream btn"/>
+                                <NavLink to="/Registration" className="inStream linkTo">
                                         СОЗДАТЬ АККАУНТ
-                                    </NavLink>
-                                </form>
-                            </div>
+                                </NavLink>
+                            </form>
                         </div>
 
                     </div>

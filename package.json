@@ -6,6 +6,7 @@
     "eslint-plugin-import": "^2.16.0",
     "loading-svg": "^1.0.0",
     "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
     "react-loading": "^2.0.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

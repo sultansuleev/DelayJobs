@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import {Container} from './style';
+import {NavLink} from 'react-router-dom';
 
 export default class Container1 extends Component {
+    redirect = () => {
+      return(
+        <NavLink to= "/JobSear"/>
+      );
+    };
+
     render(){
         return(
             <Container>
@@ -20,10 +27,10 @@ export default class Container1 extends Component {
                                 <span className="twoSpan"></span>
                             </form>
                             <div className="btn vacancy">
-                                <button>НАЙТИ ВАКАНСИЮ</button>
+                                <button onClick={() => {this.redirect()}}>НАЙТИ ВАКАНСИЮ</button>
                             </div>
                             <div className="btn summary">
-                                <button>РАЗМЕСТИТЬ РЕЗЮМЕ</button>
+                                <button value="/">РАЗМЕСТИТЬ РЕЗЮМЕ</button>
                             </div>
                         </div>
                     </div>

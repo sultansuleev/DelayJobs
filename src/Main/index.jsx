@@ -5,6 +5,7 @@ import About from './About/index';
 import EmploySear from './EmploySear/index';
 import JobSear from './JobSear/index';
 import Help from './Help/index';
+import Registration from './Registration/index';
 
 class Main extends Component{
 
@@ -16,6 +17,7 @@ class Main extends Component{
                 <Route path='/EmlpoySear' render={() => <EmploySear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
                 <Route path='/About' render={() => <About isVisible = {this.props.isVisible}  hide={this.props.hide}/>}/>
                 <Route path='/Help' render={() => <Help isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
+                <Route path='/Registration' render={() => <Registration/>}/>
             </Switch>
         );
     }
