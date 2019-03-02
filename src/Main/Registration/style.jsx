@@ -4,20 +4,23 @@ const Body = styled.div`
     width: 100%;
     height: 100%;
     background: #ffffff;
-    
+    border: 1px solid #000000;
+  
     .signUp-contain {
         width: 30.9375rem;
-        height: auto;
-        margin: auto;
+        height: 100%;
+        margin: 3.8125rem auto 4.375rem auto;
         
         .signUp {
             width: 22.8125rem;
-            margin: auto;
+            margin: auto auto 2.3125rem;
             display: flex;
             flex-direction: column;
             
             & .title {
                font-size: 48px;
+               margin: 0;
+               padding: 2rem 0 2.375rem 0;
             }
             
             & form {
@@ -31,6 +34,7 @@ const Body = styled.div`
                     font-weight: bold;
                     color: #000000;
                     font-size: 18px;
+                    outline: none;
                 }
              
                 & .inputText {
@@ -64,9 +68,17 @@ const Body = styled.div`
                 margin: auto;
                 border: 3px solid #000000;
                 font-size: 18px;
+                transition: .4s ease;
             }
             
-            margin-bottom: 2.3125rem;
+            & .btn:hover {
+                background: #000000;
+                color: #ffffff;
+                border: 5px solid #ffffff;
+                transition: .4s ease-in;
+            }
+            
+            
         }
         
         .agreements {

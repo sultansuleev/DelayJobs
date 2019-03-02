@@ -16,6 +16,7 @@ const UpperCon = styled.div`
     color: #fff;
     font-family: Cunia, sans-serif;
     font-size: 36px;
+    
     .sear {
         display: flex;
         flex-direction: row;
@@ -50,8 +51,11 @@ const UpperCon = styled.div`
     }
     
     .sort {
-    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
+    
 `;
 
 export {Container, UpperCon};

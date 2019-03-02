@@ -9,12 +9,23 @@ import Registration from './Registration/index';
 
 class Main extends Component{
 
+    state = {
+        dataSet: []
+    };
+
+    componentWillMount() {
+        let obj = require('../data/db');
+        this.setState({
+            dataSet: obj,
+        });
+    };
+
     render(){
         return(
             <Switch>
                 <Route exact path = '/' render={() => <Home isVisible = {this.props.isVisible} hide={this.props.hide}/>}/>
-                <Route path='/JobSear' render={() => <JobSear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
-                <Route path='/EmlpoySear' render={() => <EmploySear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
+                <Route path='/JobSear' render={() => <JobSear dataSet = {this.state.dataSet} isVisible = {this.props.isVisible} hide={this.props.hide}/>}/>
+                <Route path='/EmploySear' render={() => <EmploySear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
                 <Route path='/About' render={() => <About isVisible = {this.props.isVisible}  hide={this.props.hide}/>}/>
                 <Route path='/Help' render={() => <Help isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
                 <Route path='/Registration' render={() => <Registration/>}/>

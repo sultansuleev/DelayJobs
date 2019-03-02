@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {ModalB, Hidden} from './style';
 
@@ -9,7 +9,7 @@ export  default class Modal extends Component {
               this.props.isVisible ?
                 <ModalB>
                     <div className="modal-left-con">
-                        <img src="./assets/images/sign_bg.jpg"/>
+                        <img src="./assets/images/sign_bg.jpg" alt="lorem"/>
                     </div>
                     <div className="modal-right-con">
                         <button onClick={this.props.hide}>+</button>

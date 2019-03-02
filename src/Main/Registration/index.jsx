@@ -15,11 +15,11 @@ export default class Registration extends Component {
                         <input type="password" placeholder="Пароль" className="regular inputText"/>
                         <input type="text" placeholder="Email или номер телефона" className="regular inputText"/>
                         <div className="chk-box">
-                            <input type="radio" id="worker" value="Worker" className="regular inputRadio"/>
+                            <input type="radio" name="toCheck" id="worker" value="Worker" className="regular inputRadio"/>
                             <label htmlFor="worker" className="regular radVal" style={{marginBottom: '1em'}}>
                                 Я СОИСКАТЕЛЬ
                             </label>
-                            <input type="radio" id="researcher" value="Researcher" className="regular inputRadio gap"/>
+                            <input type="radio" name="toCheck" id="researcher" value="Researcher" className="regular inputRadio gap"/>
                             <label htmlFor="researcher" className="regular radVal">
                                 Я РАБОТАДАТЕЛЬ
                             </label>

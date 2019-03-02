@@ -20,6 +20,8 @@ class Home extends Component{
             avatar: '', 
             isLoading: false,
         });
+        let obj = require('../../data/db');
+        console.log(obj.cities);
     }
 
     up = () => {
