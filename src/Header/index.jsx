@@ -33,7 +33,7 @@ export default class Header extends Component {
                     <div className="help">
                         <NavLink to="/Help">Помощь</NavLink>
                     </div>
-                    <User className="user" onClick={this.props.func}>
+                    <User className="user" onClick={(e) => this.props.func(e)}>
                         <div className="icon">
                             <img src="./assets/images/svg/user.svg" alt="user"/>
                         </div>

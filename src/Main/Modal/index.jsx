@@ -12,7 +12,7 @@ export  default class Modal extends Component {
                         <img src="./assets/images/sign_bg.jpg" alt="lorem"/>
                     </div>
                     <div className="modal-right-con">
-                        <button onClick={this.props.hide}>+</button>
+                        <button onClick={(e) => this.props.hide(e)}>+</button>
 
                         <div className="content-handle">
                             <div className="title">

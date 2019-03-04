@@ -21,7 +21,7 @@ const ModalHandle = styled.div`
 const ModalB = styled.div`
     width: 44.6875em;
     height: 31.8125em;
-    position: absolute;
+    position: fixed;
      top: 25%;
     left: 32%;
     display: grid;
@@ -29,6 +29,8 @@ const ModalB = styled.div`
     background-color: rgba(255, 255, 255, 1.000);
     z-index: 9;
     overflow: hidden;
+    transition: 1s ease-in-out;
+    opacity: 1;
 
     & .modal-left-con {
 

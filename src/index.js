@@ -11,16 +11,20 @@ class ContentGrand extends Component {
         isVisible: false,
     };
 
-    modalShow = () => {
+    modalShow = (e) => {
+        e.preventDefault();
         this.setState({
             isVisible: true,
         });
+        document.body.style.overflow = "hidden";
     };
 
-    modalHide = () => {
+    modalHide = (e) => {
+        e.preventDefault();
         this.setState({
             isVisible: false,
         });
+        document.body.style.overflow = "visible";
     };
     render(){
         return(
