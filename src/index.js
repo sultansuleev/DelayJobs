@@ -1,10 +1,12 @@
 import React, {Fragment, Component} from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import Header from './Header/index';
 import Main from './Main/index';
 import Footer from './Footer/index';
-import {BrowserRouter} from 'react-router-dom';
+import Modal from './Modal/index';
+
 
 class ContentGrand extends Component {
     state = {
@@ -32,6 +34,7 @@ class ContentGrand extends Component {
                 <Header func = {this.modalShow}/>
                 <Main isVisible = {this.state.isVisible} hide={this.modalHide}/>
                 <Footer/>
+                <Modal isShown = {this.state.isVisible} modalHide = {this.modalHide}/>
             </Fragment>
         );
     }

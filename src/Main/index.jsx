@@ -23,11 +23,11 @@ class Main extends Component{
     render(){
         return(
             <Switch>
-                <Route exact path = '/' render={() => <Home isVisible = {this.props.isVisible} hide={this.props.hide}/>}/>
-                <Route path='/JobSear' render={() => <JobSear dataSet = {this.state.dataSet} isVisible = {this.props.isVisible} hide={this.props.hide}/>}/>
-                <Route path='/EmploySear' render={() => <EmploySear isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
-                <Route path='/About' render={() => <About isVisible = {this.props.isVisible}  hide={this.props.hide}/>}/>
-                <Route path='/Help' render={() => <Help isVisible = {this.props.isVisible} hide={this.props.hide} />}/>
+                <Route exact path = '/' render={() => <Home/>}/>
+                <Route path='/JobSear' render={() => <JobSear dataSet = {this.state.dataSet}/>}/>
+                <Route path='/EmploySear' render={() => <EmploySear/>}/>
+                <Route path='/About' render={() => <About/>}/>
+                <Route path='/Help' render={() => <Help/>}/>
                 <Route path='/Registration' render={() => <Registration/>}/>
             </Switch>
         );

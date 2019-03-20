@@ -20,7 +20,7 @@ const Container = styled.div`
         height: 100%;
         display: grid;
         grid-template-columns: 0.5fr 1.5fr;
-
+        
         & .photo {
             width: 100%;
             height: 100%;
@@ -135,15 +135,19 @@ const Container = styled.div`
             }
         }
     }
-    .arrow-con1 {
-        width: 8%;
-        height: 100%;
+    
+    .arrow-con {
         position: relative;
+        width: 4.4675rem;
         margin: auto;
-
+        height: 4.4675rem;
+        top: 50%;
+        transition: 2s ease;
+        animation: 2s up-down-animation infinite;
+        
         @keyframes up-down-animation {
             0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+                transform: translateY(0) ;
             }
             40% {
                 -webkit-transform: translateY(-1em);
@@ -153,44 +157,26 @@ const Container = styled.div`
                 transform: translateY(-1em);
             }
             60% {
-                -webkit-transform: -.5em;
-                -moz-transform: -.5em;
-                -ms-transform: -.5em;
-                -o-transform: -.5em;
-                transform: -.5em;
+                -webkit-transform: translateY(-.5em);
+                -moz-transform: translateY(-.5em);
+                -ms-transform: translateY(-.5em);
+                -o-transform: translateY(-.5em);
+                transform: translateY(-.5em);
             }
         }
-
-        .animated-div {
-            height: 100%;
-        }
-
-        .trans {
-            transition: 2s ease;
-            animation: 2s up-down-animation infinite;
-        }
-
-        .l1 {
-            position: absolute;
-            width: 4.73375em;
-            height: 0;
-            right: 0;
-            top: 50%;
-
-            border: 2px solid #FFFFFF;
-            transform: matrix(0.71, -0.69, 0.73, 0.71, 0, 0) !important;
-        }
-
-        .l2 {
-            position: absolute;
-            width: 4.73375em;
-            height: 0;
-            left: 0;
-            top: 50%;
-
-            border: 2px solid #FFFFFF;
-            transform: matrix(0.71, 0.69, -0.73, 0.71, 0, 0);
-        }
+    }
+    
+    .line-arrow {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-top: 5px solid #FFFFFF;
+        border-left: 5px solid #FFFFFF;
+        transform: rotate(-137deg) skew(-5deg);
     }
     `;
 

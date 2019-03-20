@@ -80,14 +80,29 @@ const Container = styled.div`
                position: absolute;
                bottom: 0;
                right: 4.25em;
+               border-radius: 4rem;
+               border: 3px solid rgba(255, 255, 255, 0);
                transition: 2s ease;
                -webkit-animation: scaled 2s infinite;
                -o-animation: scaled 2s infinite;
                animation: scaled 2s infinite;
            }
-
+           > img::before {
+                content: "Lorem";
+                color: #fff;
+                border: 3px solid rgba(255, 255, 255, 1);
+                display: block;
+                position:relative;
+           }
            > img:hover {
-               filter: invert(0, 0);
+               transition: 1s ease;
+               border: 3px solid rgba(255, 255, 255, 0.9);
+               & :after {
+                content: "";
+                transition: 1s;
+                position: absolute;
+                border: 3px solid rgba(255, 255, 255, 0);
+               }
            }
        }
 `;

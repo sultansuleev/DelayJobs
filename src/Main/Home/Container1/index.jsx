@@ -49,12 +49,12 @@ export default class Container1 extends Component {
                         </div>
                     </div>
 
-                    <div className="arrow-con1">
-                        <div className="animated-div trans">
-                            <div className="l1 "></div>
-                            <div className="l2"></div>
+                    <div className="arrow-con">
+                        <div className="line-arrow">
+
                         </div>
                     </div>
+
                 </Container>
         );
     }

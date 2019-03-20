@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import ReactLoading from 'react-loading';
 import Helmet from 'react-helmet';
-import Modal from '../Modal/index';
 import Container1 from './Container1/index';
 import Container2 from './Container2/index';
 import Container3 from './Container3/index';
@@ -40,7 +39,6 @@ class Home extends Component{
                     <title>Главная Страница</title>
                 </Helmet>
                 <MyHome onLoad={this.props.popUp}>
-                    <Modal isVisible = {this.props.isVisible} hide={this.props.hide}/>
                     <Container1/>
                     <Container2/>
                     <Container3 func={this.up}/>
