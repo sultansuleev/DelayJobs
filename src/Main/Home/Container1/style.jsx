@@ -9,6 +9,11 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
     margin-bottom: 12em;
+    
+    @media screen and (max-width: 900px){
+        width: 100%;
+        display: flex;
+    }
 
     & h1, button {
         user-select: none;
@@ -29,7 +34,7 @@ const Container = styled.div`
 
             > img {
                 position: absolute;
-                left: 1em;
+                left: 5em;
                 top: 5em;
                 transform: rotate(-90deg);
                 width: 31.5em;

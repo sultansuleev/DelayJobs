@@ -24,6 +24,7 @@ class Home extends Component{
     }
 
     up = () => {
+
             var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
             if(currentScroll > 0){
                 window.requestAnimationFrame(this.up);
@@ -38,7 +39,7 @@ class Home extends Component{
                 <Helmet>
                     <title>Главная Страница</title>
                 </Helmet>
-                <MyHome onLoad={this.props.popUp}>
+                <MyHome>
                     <Container1/>
                     <Container2/>
                     <Container3 func={this.up}/>

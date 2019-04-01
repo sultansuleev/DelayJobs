@@ -6,14 +6,14 @@ export default class Footer extends Component {
         return(
             <Foot>
                 <FirstContent>
-                    <p>©2018 Delay Inc. All Rights Reserved</p>
-                    <p>Real Estate Advertising by Galamat Academy</p>
+                    <span>©2018 Delay Inc. All Rights Reserved</span>
+                    <span>Real Estate Advertising by Galamat Academy</span>
                 </FirstContent>
 
                 <SecondContent>
-                    <p>delay.jobs@gmail.com</p>
-                    <p>+7 747 894 54 68</p>
-                    <p>+7 705 656 92 01</p>
+                    <span>delay.jobs@gmail.com</span>
+                    <span>+7 747 894 54 68</span>
+                    <span>+7 705 656 92 01</span>
                 </SecondContent>
             </Foot>
         );

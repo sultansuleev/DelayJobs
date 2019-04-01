@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const Head = styled.div `
+const Head = styled.header `
     width: 93%;
     height: 7.606875em;
     display: grid;
-    background-color: #000000 !important;
-    grid-template-columns: 1fr 1fr;
+    background-color: #000000;
+    grid-template-columns: 1.1fr .9fr;
     margin: auto;
     position: sticky;
     top: 0;
@@ -15,70 +15,55 @@ const Head = styled.div `
     & a {
         font-family: Cunia, sans-serif;
         font-size: 24px;
+        font-weight: bold;
         color: #fff;
         text-decoration: none;
         user-select: none;
     }
+`;
 
-    .con {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: inherit;
-    }
+const Source = styled.div`
+    display: flex;
+    align-items: center;
+`;
 
-    & .logo, .job, .employ, .about, .help, .user {
-        display: flex;
-        align-items: center;
-    }
+const Container = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: inherit;
+`;
 
-    & .logo {
-        height: 100%;
+const Logo = styled(Source)`
+    height: 100%;
+    position: relative;
+    z-index: 99;
+    > a {
+        font-size: 48px;
         position: relative;
         z-index: 99;
-        > a {
-            font-size: 48px;
-            position: relative;
-            z-index: 99;
-        }
-        > a::before{
-            position: absolute;
-            content: url(../assets/images/svg/planet.svg);
-            width: 5em;
-            top: -4em;
-            left: 2.1em;
-        }
     }
-
-
-    & .job {
-
+    > a::before{
+        position: absolute;
+        content: url(/assets/images/svg/planet.svg);
+        width: 5em;
+        top: -4em;
+        left: 2.1em;
     }
+`;
 
-    & .employ {
-
+const User = styled(Source)`
+    -webkit-transition: ease 0.7s;
+    -moz-transition: ease 0.7s;
+    -ms-transition: ease 0.7s;
+    -o-transition: ease 0.7s;
+    transition: ease 0.7s;
+    width: 3.75em;
+    & img {
+        width: 3.75em;
     }
-
-    & .about {
-
-    }
-
-    & .help{
-
-    }
-
-    & .user{
-        -webkit-transition: ease 0.7s;
-        -moz-transition: ease 0.7s;
-        -ms-transition: ease 0.7s;
-        -o-transition: ease 0.7s;
-        transition: ease 0.7s;
-        & img {
-            width: 3.75em;
-        }
-    }
-
-    & .user:hover {
+    
+    :hover {
         -webkit-transition: 0.7s ease;
         -moz-transition: 0.7s ease;
         -ms-transition: 0.7s ease;
@@ -86,23 +71,22 @@ const Head = styled.div `
         transition: 0.7s ease;
         transform: scale(1.14);
     }
-
-    & .job, .employ, .about, .help:hover {
-        > a {
-            transition: 0.7s ease;
-        }
-        > a:hover {
-            color: gray;
-            transition: 0.7s ease;
-        }
-    }
 `;
 
-const User = styled.div`
-
+const Links = styled(Source)`
+    > a {
+        transition: 0.7s ease;
+    }
+    > a:hover {
+        color: gray;
+        transition: 0.7s ease;
+    }
 `;
 
 export {
     Head,
+    Container,
     User,
+    Logo,
+    Links
 };

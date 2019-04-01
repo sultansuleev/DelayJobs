@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Foot = styled.div`
+const Foot = styled.footer`
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -9,7 +9,7 @@ const Foot = styled.div`
     position: relative;
     z-index: 99;
 
-    & p {
+    & span {
         color: #555555;
         margin: 0;
         font-family: Cunia, sans-serif;
@@ -17,20 +17,24 @@ const Foot = styled.div`
     }
 `;
 
-const FirstContent = styled.div`
+const FirstContent = styled.address`
     width: 22.5625em;
     height: 2.1875em;
     position: absolute;
     left: 1%;
     top: 25%;
+    display: flex;
+    flex-direction: column;
 `;
 
-const SecondContent = styled.div`
+const SecondContent = styled.address`
     width: 11.375em;
     height: 3.125em;
     position: absolute;
     right: 1%;
     top: 25%;
+    display: flex;
+    flex-direction: column;
 `;
 
 export {Foot, FirstContent, SecondContent};

@@ -7,7 +7,6 @@ import Main from './Main/index';
 import Footer from './Footer/index';
 import Modal from './Modal/index';
 
-
 class ContentGrand extends Component {
     state = {
         isVisible: false,
@@ -28,13 +27,16 @@ class ContentGrand extends Component {
         });
         document.body.style.overflow = "visible";
     };
+
+
+
     render(){
         return(
             <Fragment>
                 <Header func = {this.modalShow}/>
                 <Main isVisible = {this.state.isVisible} hide={this.modalHide}/>
                 <Footer/>
-                <Modal isShown = {this.state.isVisible} modalHide = {this.modalHide}/>
+                <Modal id="Subject" isShown = {this.state.isVisible} modalHide = {this.modalHide} />
             </Fragment>
         );
     }

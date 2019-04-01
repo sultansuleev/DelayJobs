@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Head, User} from './style';
+import {Head, Container, User, Logo, Links} from './style';
 import {NavLink} from 'react-router-dom';
 
 export default class Header extends Component {
@@ -17,28 +17,26 @@ export default class Header extends Component {
     render(){
         return(
             <Head id="header" onLoad={this.scrolled()}>
-                <div className="logo">
+                <Logo>
                     <NavLink to="/">Делай</NavLink>
-                </div>
-                <div className="con">
-                    <div className="job">
+                </Logo>
+                <Container>
+                    <Links>
                         <NavLink to="/JobSear">Ищу работу</NavLink>
-                    </div>
-                    <div className="employ">
+                    </Links>
+                    <Links>
                         <NavLink to="/EmploySear">Ищу сотрудника</NavLink>
-                    </div>
-                    <div className="about">
+                    </Links>
+                    <Links>
                         <NavLink to="/About">О нас</NavLink>
-                    </div>
-                    <div className="help">
+                    </Links>
+                    <Links>
                         <NavLink to="/Help">Помощь</NavLink>
-                    </div>
+                    </Links>
                     <User className="user" onClick={(e) => this.props.func(e)}>
-                        <div className="icon">
-                            <img src="./assets/images/svg/user.svg" alt="user"/>
-                        </div>
+                            <img src={'/assets/images/svg/user.svg'} alt="user"/>
                     </User>
-                </div>
+                </Container>
             </Head>
         );
     }

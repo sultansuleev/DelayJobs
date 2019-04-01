@@ -23,45 +23,6 @@ const Body = styled.div`
                padding: 2rem 0 2.375rem 0;
             }
             
-            & form {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-             
-                & .regular {
-                    font-family: Cunia, sans-serif;
-                    font-weight: bold;
-                    color: #000000;
-                    font-size: 18px;
-                    outline: none;
-                }
-             
-                & .inputText {
-                    border: none;
-                    border-bottom: 1px solid #000000;
-                    margin-bottom: 2rem;
-                }
-             
-                & .inputText::placeholder {
-                    color: #999999;
-                }
-                
-                .chk-box {
-                    display: flex;
-                    flex-direction: row;
-                    margin-bottom: 2.0625rem;
-                    
-                    & input {
-                        margin: 0 .2em 0 0;
-                    }
-                    
-                    .gap {
-                        margin-left: 1em;
-                    }
-                }
-            }
-            
             & .btn {
                 width: 15.625rem;
                 height: 3.125rem;
@@ -99,10 +60,66 @@ const Body = styled.div`
            
         }
     }
-    
-    
-    
-    
 `;
 
-export {Body};
+const Form = styled.form`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+ 
+    & .inputText::placeholder {
+        color: #999999;
+    }
+    
+    .chk-box {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2.0625rem;
+        
+        & input {
+            margin: 0 .2em 0 0;
+        }
+        
+        .gap {
+            margin-left: 1em;
+        }
+    }
+`;
+
+const InputMain = styled.div`
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
+    outline: none;
+`;
+
+const Input = styled.input`
+    border: none;
+    border-bottom: 1px solid #000000;
+`;
+
+const FirstName = styled(InputMain)`
+
+`;
+
+const LastName = styled(InputMain)``;
+
+const UserName = styled(InputMain)``;
+
+const Password = styled(InputMain)``;
+
+const Email = styled(InputMain)``;
+
+const PhoneNum = styled(InputMain)``;
+
+const CheckBox = styled.div``;
+
+const ErrorMessage = styled.span`
+    color: red;
+    font-size: 0.75em;
+    margin-bottom: 2rem;
+`;
+
+export {Body, Form, Input, FirstName, LastName, UserName, Password, Email, PhoneNum, CheckBox, ErrorMessage};

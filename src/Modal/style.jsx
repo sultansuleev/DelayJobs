@@ -15,7 +15,7 @@ const Block = styled.div`
         position: relative;
         top: 25%;
         left: 32%;
-        z-index: 99;
+        z-index: 9999;
     }
     
     
@@ -102,6 +102,8 @@ const Block = styled.div`
                     margin: 0 auto;
                     border: 2px solid #000;
                     transition: 1s ease;
+                    text-decoration: none;
+                    text-align: center;
                 }
                 
                 & .btn-submit {
