@@ -1,17 +1,17 @@
-import React, {Fragment, Component} from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
-import Header from './Header/index';
-import Main from './Main/index';
-import Footer from './Footer/index';
-import Modal from './Modal/index';
+import Application from './App';
 
 class ContentGrand extends Component {
-    state = {
-        isVisible: false,
-    };
+    constructor(props){
+        super(props);
 
+        this.state = {
+            isVisible: false,
+        }
+    }
     modalShow = (e) => {
         e.preventDefault();
         this.setState({
@@ -28,16 +28,9 @@ class ContentGrand extends Component {
         document.body.style.overflow = "visible";
     };
 
-
-
     render(){
         return(
-            <Fragment>
-                <Header func = {this.modalShow}/>
-                <Main isVisible = {this.state.isVisible} hide={this.modalHide}/>
-                <Footer/>
-                <Modal id="Subject" isShown = {this.state.isVisible} modalHide = {this.modalHide} />
-            </Fragment>
+          <Application modalShow={this.modalShow} modalHide={this.modalHide} isVisible={this.state.isVisible}/>
         );
     }
 }

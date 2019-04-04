@@ -1,16 +1,30 @@
 import styled from 'styled-components';
 
-const Head = styled.header `
-    width: 93%;
+const HeadContainer = styled.header `
+    width: 100%;
     height: 7.606875em;
     display: grid;
     background-color: #000000;
-    grid-template-columns: 1.1fr .9fr;
-    margin: auto;
     position: sticky;
     top: 0;
     z-index: 9;
     transition: .2s ease-in;
+
+    & a {
+        font-family: Cunia, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        user-select: none;
+    }
+`;
+
+const HeadBody = styled.div`
+    width: 93%;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    margin: auto;
 
     & a {
         font-family: Cunia, sans-serif;
@@ -48,7 +62,7 @@ const Logo = styled(Source)`
         content: url(/assets/images/svg/planet.svg);
         width: 5em;
         top: -4em;
-        left: 2.1em;
+        left: 2.25em;;
     }
 `;
 
@@ -84,7 +98,8 @@ const Links = styled(Source)`
 `;
 
 export {
-    Head,
+    HeadContainer,
+    HeadBody,
     Container,
     User,
     Logo,

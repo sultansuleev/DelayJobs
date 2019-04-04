@@ -7,12 +7,12 @@ const Body = styled.div`
     border: 1px solid #000000;
   
     .signUp-contain {
-        width: 30.9375rem;
+        width: 50%;
         height: 100%;
         margin: 3.8125rem auto 4.375rem auto;
         
         .signUp {
-            width: 22.8125rem;
+            width: 67%;
             margin: auto auto 2.3125rem;
             display: flex;
             flex-direction: column;
@@ -23,21 +23,7 @@ const Body = styled.div`
                padding: 2rem 0 2.375rem 0;
             }
             
-            & .btn {
-                width: 15.625rem;
-                height: 3.125rem;
-                margin: auto;
-                border: 3px solid #000000;
-                font-size: 18px;
-                transition: .4s ease;
-            }
             
-            & .btn:hover {
-                background: #000000;
-                color: #ffffff;
-                border: 5px solid #ffffff;
-                transition: .4s ease-in;
-            }
             
             
         }
@@ -67,24 +53,7 @@ const Form = styled.form`
     height: 100%;
     display: flex;
     flex-direction: column;
- 
-    & .inputText::placeholder {
-        color: #999999;
-    }
-    
-    .chk-box {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 2.0625rem;
-        
-        & input {
-            margin: 0 .2em 0 0;
-        }
-        
-        .gap {
-            margin-left: 1em;
-        }
-    }
+
 `;
 
 const InputMain = styled.div`
@@ -93,16 +62,51 @@ const InputMain = styled.div`
     color: #000000;
     font-size: 18px;
     outline: none;
+    margin-bottom: 2rem;
+    
 `;
 
 const Input = styled.input`
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
+    outline: none;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid ${props => props.nonValid ? 'red' : '#000'};
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease;
+    
+    
+    ::placeholder {
+        color: #999999;
+    }
 `;
 
-const FirstName = styled(InputMain)`
-
+const Button = styled.input`
+    width: 15.625rem;
+    height: 3.125rem;
+    margin: auto;
+    border: 3px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .4s ease;
+   
+    :hover {
+        background: #000000;
+        color: #ffffff;
+        border: 5px solid #ffffff;
+        transition: .4s ease-in;
+    }
 `;
+
+const Grid = styled(InputMain)`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+`;
+
+const FirstName = styled(InputMain)``;
 
 const LastName = styled(InputMain)``;
 
@@ -114,12 +118,19 @@ const Email = styled(InputMain)``;
 
 const PhoneNum = styled(InputMain)``;
 
-const CheckBox = styled.div``;
+const CheckBox = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 4rem 2.0625rem 4rem;
+    
+`;
+
+
 
 const ErrorMessage = styled.span`
     color: red;
     font-size: 0.75em;
-    margin-bottom: 2rem;
+    
 `;
 
-export {Body, Form, Input, FirstName, LastName, UserName, Password, Email, PhoneNum, CheckBox, ErrorMessage};
+export {Body, Form, Input, Grid, FirstName, LastName, UserName, Password, Email, PhoneNum, CheckBox, Button, ErrorMessage};

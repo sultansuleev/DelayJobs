@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a861b622-d071-4e2d-9d4a-b1594e367c0c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Registration/SelectUserType/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Registration/SelectUserType/style.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/style.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Header/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/style.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Home/Container1/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/Container1/style.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Home/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/style.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Registration/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Registration/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Registration/style.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modal/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modal/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal/style.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Registration/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="141" column="47" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="47" />
+            <state relative-caret-position="1914">
+              <caret line="89" column="72" selection-start-line="89" selection-start-column="72" selection-end-line="89" selection-end-column="72" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -54,11 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Registration/style.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+            <state relative-caret-position="1848">
+              <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modal/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,6 +82,14 @@
         <option value="tsconfig.json" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>secondName</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>lastName</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,24 +116,27 @@
         <option value="$PROJECT_DIR$/src/Main/Home/Container2/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/Container2/style.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/Container3/index.jsx" />
-        <option value="$PROJECT_DIR$/src/Main/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Modal/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Modal/style.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/Main/Home/Container3/style.jsx" />
-        <option value="$PROJECT_DIR$/src/Modal/style.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/index.jsx" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Footer/index.jsx" />
         <option value="$PROJECT_DIR$/src/Footer/style.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/style.jsx" />
-        <option value="$PROJECT_DIR$/src/Header/index.jsx" />
-        <option value="$PROJECT_DIR$/src/Header/style.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/Container1/style.jsx" />
+        <option value="$PROJECT_DIR$/src/Header/index.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Modal/index.jsx" />
+        <option value="$PROJECT_DIR$/src/App.jsx" />
+        <option value="$PROJECT_DIR$/src/Main/Registration/SelectUserType/style.jsx" />
+        <option value="$PROJECT_DIR$/src/Header/style.jsx" />
+        <option value="$PROJECT_DIR$/src/Main/Registration/SelectUserType/index.jsx" />
+        <option value="$PROJECT_DIR$/src/Main/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Registration/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Registration/style.jsx" />
+        <option value="$PROJECT_DIR$/src/Modal/style.jsx" />
+        <option value="$PROJECT_DIR$/src/Modal/index.jsx" />
       </list>
     </option>
   </component>
@@ -157,18 +178,6 @@
               <item name="DelayJobs" type="b2602c69:ProjectViewProjectNode" />
               <item name="DelayJobs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DelayJobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DelayJobs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DelayJobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DelayJobs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -191,6 +200,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -283,12 +293,16 @@
       <workItem from="1553239393720" duration="7507000" />
       <workItem from="1553605891516" duration="5285000" />
       <workItem from="1553934223760" duration="2058000" />
-      <workItem from="1554117880478" duration="9972000" />
+      <workItem from="1554117880478" duration="10231000" />
+      <workItem from="1554176776239" duration="14870000" />
+      <workItem from="1554255304783" duration="1507000" />
+      <workItem from="1554342694757" duration="123000" />
+      <workItem from="1554382683354" duration="238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96039000" />
+    <option name="totallyTimeSpent" value="113036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,13 +317,13 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6183128" visible="true" weight="0.18681319" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6183128" weight="0.18864469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.18621399" side_tool="true" weight="0.17032968" />
       <window_info id="Favorites" order="3" sideWeight="0.38168725" side_tool="true" weight="0.18315019" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.32921812" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" weight="0.32796317" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" weight="0.32407406" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,13 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -543,10 +550,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/style.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Header/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+        <state relative-caret-position="902">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -555,18 +565,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="587">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modal/index.jsx">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        <state relative-caret-position="311">
+          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Registration/SelectUserType/style.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Header/style.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1069">
+          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Registration/SelectUserType/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -575,35 +626,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modal/style.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/style.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Header/style.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-619">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="846">
+          <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Registration/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="141" column="47" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="47" />
+        <state relative-caret-position="1914">
+          <caret line="89" column="72" selection-start-line="89" selection-start-column="72" selection-end-line="89" selection-end-column="72" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -612,8 +643,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Registration/style.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+        <state relative-caret-position="1848">
+          <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modal/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

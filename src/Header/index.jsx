@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Head, Container, User, Logo, Links} from './style';
+import {HeadContainer, HeadBody, Container, User, Logo, Links} from './style';
 import {NavLink} from 'react-router-dom';
 
 export default class Header extends Component {
@@ -16,28 +16,30 @@ export default class Header extends Component {
 
     render(){
         return(
-            <Head id="header" onLoad={this.scrolled()}>
-                <Logo>
-                    <NavLink to="/">Делай</NavLink>
-                </Logo>
-                <Container>
-                    <Links>
-                        <NavLink to="/JobSear">Ищу работу</NavLink>
-                    </Links>
-                    <Links>
-                        <NavLink to="/EmploySear">Ищу сотрудника</NavLink>
-                    </Links>
-                    <Links>
-                        <NavLink to="/About">О нас</NavLink>
-                    </Links>
-                    <Links>
-                        <NavLink to="/Help">Помощь</NavLink>
-                    </Links>
-                    <User className="user" onClick={(e) => this.props.func(e)}>
+            <HeadContainer id="header" onLoad={this.scrolled()}>
+                <HeadBody>
+                    <Logo>
+                        <NavLink to="/">Делай</NavLink>
+                    </Logo>
+                    <Container>
+                        <Links>
+                            <NavLink to="/JobSear">Ищу работу</NavLink>
+                        </Links>
+                        <Links>
+                            <NavLink to="/EmploySear">Ищу сотрудника</NavLink>
+                        </Links>
+                        <Links>
+                            <NavLink to="/About">О нас</NavLink>
+                        </Links>
+                        <Links>
+                            <NavLink to="/Help">Помощь</NavLink>
+                        </Links>
+                        <User className="user" onClick={(e) => this.props.func(e)}>
                             <img src={'/assets/images/svg/user.svg'} alt="user"/>
-                    </User>
-                </Container>
-            </Head>
+                        </User>
+                    </Container>
+                </HeadBody>
+            </HeadContainer>
         );
     }
 }
