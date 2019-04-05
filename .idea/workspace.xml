@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a861b622-d071-4e2d-9d4a-b1594e367c0c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Home/Container1/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/Container1/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Home/Container1/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/Container1/style.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Home/Container2/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/Container2/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Home/Container2/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Home/Container2/style.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Registration/SelectUserType/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Registration/SelectUserType/style.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modal/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modal/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal/style.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/db.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Footer/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -75,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/Home/Container2/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state relative-caret-position="692">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -90,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Home/Container2/style.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="780">
+              <caret line="201" column="7" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -197,12 +188,12 @@
         <option value="$PROJECT_DIR$/src/Modal/style.jsx" />
         <option value="$PROJECT_DIR$/src/data/db.json" />
         <option value="$PROJECT_DIR$/src/Modal/index.jsx" />
-        <option value="$PROJECT_DIR$/src/Main/Home/Container2/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/Container1/index.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Home/Container1/style.jsx" />
-        <option value="$PROJECT_DIR$/src/Main/Home/Container2/style.jsx" />
         <option value="$PROJECT_DIR$/src/Main/Registration/SelectUserType/style.jsx" />
         <option value="$PROJECT_DIR$/src/Footer/index.jsx" />
+        <option value="$PROJECT_DIR$/src/Main/Home/Container2/style.jsx" />
+        <option value="$PROJECT_DIR$/src/Main/Home/Container2/index.jsx" />
       </list>
     </option>
   </component>
@@ -409,12 +400,12 @@
       <workItem from="1554342694757" duration="123000" />
       <workItem from="1554382683354" duration="2469000" />
       <workItem from="1554394460366" duration="2283000" />
-      <workItem from="1554430027809" duration="542000" />
+      <workItem from="1554430027809" duration="808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118092000" />
+    <option name="totallyTimeSpent" value="118358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +420,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6183128" visible="true" weight="0.1929182" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6183128" visible="true" weight="0.1929182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.18621399" side_tool="true" weight="0.17032968" />
       <window_info id="Favorites" order="3" sideWeight="0.38168725" side_tool="true" weight="0.18315019" />
@@ -723,23 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Home/Container2/style.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Home/Container2/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
@@ -764,6 +738,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="63" lean-forward="true" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Home/Container2/style.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="201" column="7" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Home/Container2/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

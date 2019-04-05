@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container} from './style';
+import {Container, ContainerBody, ArrowsContainer, ArrowLines} from './style';
 
 export default class Container2 extends Component {
     redirect = e => {
@@ -9,7 +9,7 @@ export default class Container2 extends Component {
     render(){
         return(
             <Container>
-                    <div className="con2">
+                    <ContainerBody>
                         <div className="photo">
                             <p>"Hello, <span className="quote">Junior</span>!"</p>
                             <img src="./assets/images/coder.jpg" alt="Coder"/>
@@ -31,13 +31,11 @@ export default class Container2 extends Component {
                                 <button>РАЗМЕСТИТЬ ВАКАНСИЮ</button>
                             </div>
                         </div>
-                    </div>
+                    </ContainerBody>
 
-                    <div className="arrow-con">
-                        <div className="line-arrow">
-
-                        </div>
-                    </div>
+                    <ArrowsContainer>
+                        <ArrowLines/>
+                    </ArrowsContainer>
                 </Container>
         );
     }

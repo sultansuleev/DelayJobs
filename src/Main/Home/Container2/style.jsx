@@ -199,4 +199,4 @@ const ArrowLines = styled.div`
     transform: rotate(-137deg) skew(-5deg);
 `;
 
-export {Container}
+export {Container, ContainerBody, ArrowsContainer, ArrowLines}
