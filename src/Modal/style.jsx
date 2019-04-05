@@ -3,29 +3,28 @@ import styled from 'styled-components';
 const Block = styled.div`
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     position: absolute;
     top: 0;
+    display: flex;
     z-index: 99;
+    justify-content: center;
+    align-items: center;
 `;
 
 const ModalContent = styled.div`
     width: auto;
     height: 31.8125rem;
     display: flex;
-    position: relative;
-    top: 25%;
-    left: 32%;
-    z-index: 9
 `;
 
-const LeftSide_Content = styled.div`
+const LeftSideContent = styled.div`
     width: 21rem;
     height: 100%;
     background: url("/assets/images/sign_bg.jpg") no-repeat;
 `;
 
-const RightSide_Content = styled.div`
+const RightSideContent = styled.div`
     width: 23.6875rem;
         height: 100%;
         background: #fff;
@@ -115,4 +114,4 @@ const SubmitButton = styled(Button)`
     margin: 0.7em auto 1.1rem auto;
 `;
 
-export {Block, ModalContent, LeftSide_Content, RightSide_Content, CloseModal, SignUpForm, Title, Form, FormInput, Button, SubmitButton};
+export {Block, ModalContent, LeftSideContent, RightSideContent, CloseModal, SignUpForm, Title, Form, FormInput, Button, SubmitButton};

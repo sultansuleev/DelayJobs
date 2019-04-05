@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import {Container} from './style';
 
 export default class Container2 extends Component {
+    redirect = e => {
+        e.preventDefault();
+        window.location = '/EmploySear/index'
+    };
     render(){
         return(
             <Container>
@@ -21,7 +25,7 @@ export default class Container2 extends Component {
                                 <span className="twoSpan"></span>
                             </form>
                             <div className="btn vacancy">
-                                <button>НАЙТИ СОТРУДНИКА</button>
+                                <button onClick={e => this.redirect(e)}>НАЙТИ СОТРУДНИКА</button>
                             </div>
                             <div className="btn summary">
                                 <button>РАЗМЕСТИТЬ ВАКАНСИЮ</button>

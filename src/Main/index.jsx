@@ -66,11 +66,10 @@ class Main extends Component{
             ? "Выберите тип аккаунта"
             : "";
 
-        console.log(formErrors);
         if(formValid(this.state)){
             console.log(`
                 SUBMITTING
-                First Name: ${this.state.firstName}
+                ${this.state}
             `)
         } else {
             console.error("FORM INVALID");

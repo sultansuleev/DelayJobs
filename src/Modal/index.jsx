@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {Block, ModalContent, LeftSide_Content, RightSide_Content, CloseModal, SignUpForm, Title, Form, FormInput, Button, SubmitButton} from './style';
+import {Block, ModalContent, LeftSideContent, RightSideContent, CloseModal, SignUpForm, Title, Form, FormInput, Button, SubmitButton} from './style';
 
 export default class Modal extends Component {
     locate = (e) => {
         e.preventDefault();
-        window.location = '/Registration/index.js';
+        window.location = '/Registration/index';
     };
 
     formValidate = (e) => {
@@ -27,8 +27,8 @@ export default class Modal extends Component {
                     }}}>
 
                 <ModalContent>
-                    <LeftSide_Content/>
-                    <RightSide_Content>
+                    <LeftSideContent/>
+                    <RightSideContent>
                         <CloseModal onClick={(e) => this.props.modalHide(e)}>
                             <img src="/assets/images/CrossExit.svg" alt=""/>
                         </CloseModal>
@@ -47,7 +47,7 @@ export default class Modal extends Component {
                                 <Button type="button" value="СОЗДАТЬ АККАУНТ" className="inStream btn btn-reg" onClick={(e) => {this.locate(e)}}/>
                             </Form>
                         </SignUpForm>
-                    </RightSide_Content>
+                    </RightSideContent>
                 </ModalContent>
             </Block>
         );

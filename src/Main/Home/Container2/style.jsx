@@ -9,19 +9,15 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
     margin-bottom: 12em;
+`;
 
-    & h1, button {
-        user-select: none;
-        outline: none;
-    }
-
-    & .con2 {
-        width: inherit;
-        height: 100%;
-        display: grid;
-        grid-template-columns: .8fr 1.2fr;
-
-        & .photo {
+const ContainerBody = styled.div`
+    width: inherit;
+    height: 100%;
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    
+    & .photo {
             width: 100%;
             height: 100%;
             position: relative;
@@ -158,49 +154,49 @@ const Container = styled.div`
                 margin: 0 auto;
             }
         }
-    }
-    .arrow-con {
-        position: relative;
-        width: 4.4675rem;
-        margin: auto;
-        height: 4.4675rem;
-        top: 50%;
-        transition: 2s ease;
-        animation: 2s up-down-animation infinite;
-        
-        @keyframes up-down-animation {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0) ;
-            }
-            40% {
-                -webkit-transform: translateY(-1em);
-                -moz-transform: translateY(-1em);
-                -ms-transform: translateY(-1em);
-                -o-transform: translateY(-1em);
-                transform: translateY(-1em);
-            }
-            60% {
-                -webkit-transform: translateY(-.5em);
-                -moz-transform: translateY(-.5em);
-                -ms-transform: translateY(-.5em);
-                -o-transform: translateY(-.5em);
-                transform: translateY(-.5em);
-            }
+`;
+
+const ArrowsContainer = styled.div`
+    position: relative;
+    width: 4.4675rem;
+    margin: auto;
+    height: 4.4675rem;
+    top: 50%;
+    transition: 2s ease;
+    animation: 2s up-down-animation infinite;
+    
+    @keyframes up-down-animation {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0) ;
+        }
+        40% {
+            -webkit-transform: translateY(-1em);
+            -moz-transform: translateY(-1em);
+            -ms-transform: translateY(-1em);
+            -o-transform: translateY(-1em);
+            transform: translateY(-1em);
+        }
+        60% {
+            -webkit-transform: translateY(-.5em);
+            -moz-transform: translateY(-.5em);
+            -ms-transform: translateY(-.5em);
+            -o-transform: translateY(-.5em);
+            transform: translateY(-.5em);
         }
     }
-    
-    .line-arrow {
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        font-size: 12px;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        border-top: 5px solid #FFFFFF;
-        border-left: 5px solid #FFFFFF;
-        transform: rotate(-137deg) skew(-5deg);
-    }
+`;
+
+const ArrowLines = styled.div`
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-top: 5px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
+    transform: rotate(-137deg) skew(-5deg);
 `;
 
 export {Container}

@@ -48,7 +48,7 @@ const Span = styled.span`
       left: 0;
       width: 1.4em;
       height: 1.4em;
-      background-color: blue;
+      background-color: #808080;
       border-radius: 1px;
     }
 `;
