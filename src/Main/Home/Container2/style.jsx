@@ -16,144 +16,120 @@ const ContainerBody = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: .8fr 1.2fr;
+`;
+
+const PhotoBody = styled.div`
+    width: 100%;
+    height: 100%;
+    position: relative;
     
-    & .photo {
-            width: 100%;
-            height: 100%;
-            position: relative;
+    & p {
+        user-select: none;
+        font-size: 48px;
+        font-family: "Courier New", serif;
+        color: #ffffff;
+        position: relative;
+        top: 12em;
+        left: 3.5em;
+        z-index: 2;
+        width: 10em;
 
-            & p {
-                user-select: none;
-                font-size: 48px;
-                font-family: "Courier New", serif;
-                color: #ffffff;
-                position: relative;
-                top: 12em;
-                left: 3.5em;
-                z-index: 2;
-                width: 10em;
-
-                & span{
-                    color: #19fc05;
-                }
-            }
-
-            > img {
-                position: absolute;
-                left: -1em;
-                top: -3em;
-                width: 51.14875em;
-                height: 52.5em;
-                z-index: 0;
-                user-select: none;
-            }
+        & span{
+            color: #19fc05;
         }
-        & .form {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            color: white;
-            z-index: 99;
-            padding-top: 2em;
+    }
 
-            .title {
-                width: 45.283125em;
-                margin: 0 auto 2em auto;
+    > img {
+        position: absolute;
+        left: -1em;
+        top: -3em;
+        width: 51.14875em;
+        height: 52.5em;
+        z-index: 0;
+        user-select: none;
+    }
+`;
 
-                & h1 {
-                    font-family: Cunia, sans-serif;
-                    font-weight: bold;
-                    font-size: 72px;
-                    margin: auto;
-                }
-            }
+const FormContain = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 99;
+    padding-top: 2em;
+`;
 
-            & form {
-                display: flex;
-                flex-direction: column;
-                width: 25em;
-                height: 10em;
-                margin: 0 auto 2.153125em auto;
-                position: relative;
-                color: white;
+const Title = styled.div`
+    width: 45.283125em;
+    margin: 0 auto 2em auto;
 
-                & input {
-                    height: 5em;
-                    background: none;
-                    border: none;
-                    font-size: 24px;
-                    font-family: Montserrat, sans-serif;
-                    color: white;
-                    outline: none;
-                    opacity: 1;
-                    transition: 0.3s ease;
+    & h1 {
+        font-family: Cunia, sans-serif;
+        font-weight: bold;
+        font-size: 72px;
+        margin: auto;
+    }
+`;
 
-                    & input:focus::placeholder{
-                        opacity: 0;
-                        transition: 0.3s ease;
-                    }
-                }
+const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    height: 21em;
+    margin: 0 auto 2.153125em auto;
+    position: relative;
+    color: white;
+`;
 
-                & input::placeholder {
-                    font-family: Cunia, sans-serif;
-                }
+const Input = styled.input`
+    height: 2em;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    outline: none;
+    opacity: 1;
+    transition: 0.3s ease;
+    border-bottom: 4px solid #C3C3C3;
+    margin-bottom: 2rem;
+    
+    ::placeholder {
+        color: #C3C3C3;
+        font-family: Cunia, sans-serif;
+    }
+                
+    :focus::placeholder{
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+`;
 
-                & span {
-                    background: #C3C3C3;
-                    border: 2px solid #C3C3C3;
-                    width: 100%;
-                    box-sizing: border-box;
-                    position: absolute;
-                    left: 1em;
-                    top: 1em;
-                }
+const Button = styled.input`
+    width: 100%;
+    height: 4.325rem;
+    border: 3px solid #FFFDFD;
+    transition: .4s ease;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 24px;
+    font-family: Cunia, sans-serif;
+    
+    :hover {
+        background-color: #FFFFFF;
+        transition: .4s ease-in;
+        color: #000000;
+        border: 3px solid #000000;
+    }
+`;
 
-                & .oneSpan {
-                    left: 0;
-                    top: 3.4em;
-                }
+const Employ = styled(Button)`
+    margin: 1.125em 0;
+`;
 
-                & .twoSpan {
-                    left: 0;
-                    top: 8.4em;
-                }
-            }
-
-            .btn:hover {
-                background-color: #FFFFFF;
-                transition: .4s ease-in;
-                & button {
-                    color: #000000;
-                }
-                border: 3px solid #000000;
-            }
-
-            & button {
-                transition: .4s ease;
-                width: inherit;
-                height: inherit;
-                background-color: rgba(0, 0, 0, 0);
-                color: white;
-                font-size: 24px;
-                font-family: Cunia, sans-serif;
-                border: none;
-            }
-
-            & .vacancy {
-                width: 25em;
-                height: 4.4375em;
-                border: 3px solid #FFFDFD;
-                margin: 0 auto 2.125em auto;
-            }
-
-            & .summary {
-                width: 25em;
-                height: 4.375em;
-                border: 3px solid #FFFDFD;
-                margin: 0 auto;
-            }
-        }
+const Vacancy = styled(Button)`
+    margin: auto 0;
 `;
 
 const ArrowsContainer = styled.div`
@@ -199,4 +175,4 @@ const ArrowLines = styled.div`
     transform: rotate(-137deg) skew(-5deg);
 `;
 
-export {Container, ContainerBody, ArrowsContainer, ArrowLines}
+export {Container, ContainerBody, PhotoBody, FormContain, Title, Form, Input, Employ, Vacancy, ArrowsContainer, ArrowLines}

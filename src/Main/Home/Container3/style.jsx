@@ -29,6 +29,7 @@ const Container = styled.div`
                top: -8em;
                width: 46.218125em;
                z-index: 1;
+               
            }
        }
 

@@ -26,7 +26,7 @@ const RadioButton = styled.label`
     display: block;
     }
     
-    p {
+    label {
         margin: 0;
     }
 `;

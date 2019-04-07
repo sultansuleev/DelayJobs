@@ -8,6 +8,7 @@ const Container = styled.div`
     grid-row-gap: 7.9375em;
     position: relative;
     z-index: 1;
+    
     margin-bottom: 12em;
     
     @media screen and (max-width: 900px){
