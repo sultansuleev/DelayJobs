@@ -7,7 +7,6 @@ export default class Footer extends Component {
             <Foot>
                 <FirstContent>
                     <span>©2018 Delay Inc. All Rights Reserved</span>
-                    <span>Designed by Malgazhdar Ermahan</span>
                     <span>Real Estate Advertising by Galamat Academy</span>
 
                 </FirstContent>

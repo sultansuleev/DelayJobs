@@ -1,8 +1,11 @@
 html, body {
-  min-height: 100%;
   margin: 0;
   -webkit-overflow-scrolling: touch;
   background-color: #000;
+}
+
+html, body, #root {
+  min-height: 100vh;
 }
 
 html {
@@ -17,6 +20,10 @@ body {
     transition: 1s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+#root {
   width: 100%;
 }
 
