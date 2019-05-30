@@ -1,23 +1,14 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-<<<<<<< HEAD
-    width: 100%;
-        height: 36em;
-        display: grid;
-        grid-template-columns: 1fr 1.4fr;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 1em;
-=======
        width: 100%;
        height: 36em;
        display: grid;
        grid-template-columns: 1fr 1.4fr;
        position: relative;
        z-index: 1;
+       margin-bottom: 1em;
        padding-bottom: 1rem;
->>>>>>> 4181643f00a8da5854c163ebb4fdb349eaedfc60
 
        & h1, li {
            user-select: none;
