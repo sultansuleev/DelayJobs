@@ -31,10 +31,10 @@ export default class Header extends Component {
                                 <NavLink to="/EmploySear">Ищу сотрудника</NavLink>
                             </Links>
                             <Links>
-                                <NavLink to="/About">О нас</NavLink>
+                                <NavLink to="#">О нас</NavLink>
                             </Links>
                             <Links>
-                                <NavLink to="/Help">Помощь</NavLink>
+                                <NavLink to="#">Помощь</NavLink>
                             </Links>
                             <User className="user" onClick={() => this.props.handleShow(true)}>
                                 <img src={'/assets/images/svg/user.svg'} alt="user"/>
