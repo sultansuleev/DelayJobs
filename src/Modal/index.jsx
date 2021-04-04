@@ -14,22 +14,12 @@ export default class Modal extends Component {
     };
 
     render(){
-        if(!this.props.isShown){
-            return null;
-        } else {
-            document.body.style.overflow = "hidden";
-        }
         return(
-            <Block id="subject" onClick={
-                (e) => {
-                    if (e.target === document.getElementById('subject')){
-                        this.props.modalHide(e);
-                    }}}>
-
+            <Block>
                 <ModalContent>
                     <LeftSideContent/>
                     <RightSideContent>
-                        <CloseModal onClick={(e) => this.props.modalHide(e)}>
+                        <CloseModal onClick={() => this.props.handleClose(false)}>
                             <img src="/assets/images/CrossExit.svg" alt=""/>
                         </CloseModal>
 

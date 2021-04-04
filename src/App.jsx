@@ -1,33 +1,35 @@
-import React, {Fragment, Component} from 'react';
+import React, {Fragment, Component, useState, useEffect} from 'react';
 import Header from './Header/index';
 import Main from './Main/index';
 import Footer from './Footer/index';
-import Modal from './Modal/index';
+import {Modal} from 'react-bootstrap';
+import ModalContent from './Modal/index';
+import { Overlay } from 'react-portal-overlay';
 
-export default class Application extends Component {
-    constructor(props){
-        super(props);
 
-        this.state = {
-            dataSet: []
-        }
-    }
+export const Application = (props) => {
+    const [dataSet, setDataSet] = useState([]);
+    const [open, setOpen] = useState(false);
 
-    componentWillMount() {
+    const handleDS = (obj) => setDataSet(obj);
+
+
+    useEffect(()=> {
         let obj = require('./data/db');
-        this.setState({
-            dataSet: obj,
-        });
-    };
+        handleDS(obj);
+    })
 
-    render(){
-        return(
-          <Fragment>
-              <Header func = {this.props.modalShow}/>
-              <Main isVisible = {this.props.isVisible} hide={this.props.modalHide} dataSet = {this.state.dataSet}/>
-              <Footer/>
-              <Modal id="Subject" isShown = {this.props.isVisible} modalHide = {this.props.modalHide} />
-          </Fragment>
-        );
-    }
+    return(
+        <Fragment>
+            <div className={'mainComp'}>
+                <Header func = {props.modalShow} handleShow = {setOpen}/>
+                <Main isVisible = {props.isVisible} hide={props.modalHide} dataSet = {dataSet}/>
+
+            </div>
+            <Footer/>
+            <Overlay className={'custOverlay'} open={open} onClose={() => setOpen(false)}>
+                <ModalContent handleClose = {setOpen}/>
+            </Overlay>
+        </Fragment>
+    );
 }

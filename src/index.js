@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
-import Application from './App';
+import {Application} from './App';
 
 class ContentGrand extends Component {
     constructor(props){

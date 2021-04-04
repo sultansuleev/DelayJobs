@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Switch, Route, withRouter} from 'react-router-dom';
+import {Switch, Route, withRouter} from 'react-router-dom';
 import Home from './Home/index';
 import About from './About/index';
 import EmploySear from './EmploySear/index';
@@ -11,7 +11,7 @@ const emailRegex = RegExp(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\
 const latinaRegex = RegExp(/^\s*(\w+)\s*$/);
 const kirylRegex = RegExp(/а-я/i);
 
-const formValid = ({formErrors, ...rest})=> {
+const formValid = ({formErrors, ...rest}) => {
     let valid = true;
 
     //VALIDATE FORM ERRORS BEING EMPTY
@@ -27,8 +27,8 @@ const formValid = ({formErrors, ...rest})=> {
     return valid;
 };
 
-class Main extends Component{
-    constructor(props){
+class Main extends Component {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -43,9 +43,9 @@ class Main extends Component{
                 firstName: "",
                 lastName: "",
                 userName: "",
-                password:"",
+                password: "",
                 email: "",
-                phoneNum:"",
+                phoneNum: "",
                 userType: ""
             }
         };
@@ -62,11 +62,11 @@ class Main extends Component{
         let formErrors = {...this.state.formErrors};
 
         formErrors.userType =
-          this.state.userType === null
-            ? "Выберите тип аккаунта"
-            : "";
+            this.state.userType === null
+                ? "Выберите тип аккаунта"
+                : "";
 
-        if(formValid(this.state)){
+        if (formValid(this.state)) {
             console.log(`
                 SUBMITTING
                 ${this.state}
@@ -85,43 +85,43 @@ class Main extends Component{
         switch (name) {
             case 'firstName':
                 formErrors.firstName =
-                  latinaRegex.test(value)
-                    ? formErrors.firstName = "Имя должен состоять из кириллических букв"
-                    : !kirylRegex.test(value)
+                    latinaRegex.test(value)
+                        ? formErrors.firstName = "Имя должен состоять из кириллических букв"
+                        : !kirylRegex.test(value)
                         ? ""
                         : "Имя должен состоять из кириллических букв";
                 break;
             case 'lastName':
                 formErrors.lastName =
-                  latinaRegex.test(value)
-                    ? formErrors.lastName = "Фамилия должна состоять из кириллических букв"
-                    : "";
+                    latinaRegex.test(value)
+                        ? formErrors.lastName = "Фамилия должна состоять из кириллических букв"
+                        : "";
                 break;
             case 'userName':
                 formErrors.userName =
-                  value.length < 5
-                    ? "Имя пользователя должна состоять как минимум из 5 символов."
-                    : "";
+                    value.length < 5
+                        ? "Имя пользователя должна состоять как минимум из 5 символов."
+                        : "";
                 break;
             case 'password':
                 formErrors.password =
-                  value.length < 6
-                    ? "Пароль должен состоять как минимум из 6 символов"
-                    : !latinaRegex.test(value)
-                    ? formErrors.password = "Пароль должен состоять из латинских букв"
-                    : "";
+                    value.length < 6
+                        ? "Пароль должен состоять как минимум из 6 символов"
+                        : !latinaRegex.test(value)
+                        ? formErrors.password = "Пароль должен состоять из латинских букв"
+                        : "";
                 break;
             case 'email':
                 formErrors.email =
-                  emailRegex.test(value)
-                    ? ''
-                    : 'Введите корректный E-mail';
+                    emailRegex.test(value)
+                        ? ''
+                        : 'Введите корректный E-mail';
                 break;
             case 'phoneNum':
                 formErrors.phoneNum =
-                  value.length < 10
-                    ? "Введите корректный номер мобильного телефона"
-                    : "";
+                    value.length < 10
+                        ? "Введите корректный номер мобильного телефона"
+                        : "";
                 break;
             default:
                 break;
@@ -132,11 +132,11 @@ class Main extends Component{
         }, () => console.log(this.state));
     };
 
-    render(){
-        return(
+    render() {
+        return (
             <Switch>
-                <Route exact path = '/' render={() => <Home/>}/>
-                <Route path='/JobSear' render={() => <JobSear dataSet = {this.props.dataSet}/>}/>
+                <Route exact path='/' render={() => <Home/>}/>
+                <Route path='/JobSear' render={() => <JobSear dataSet={this.props.dataSet}/>}/>
                 <Route path='/EmploySear' render={() => <EmploySear/>}/>
                 <Route path='/About' render={() => <About/>}/>
                 <Route path='/Help' render={() => <Help/>}/>
@@ -145,6 +145,7 @@ class Main extends Component{
                     formErrors={this.state} handleUserTypeSelect={this.handleUserTypeSelect}
                 />}/>
             </Switch>
+
         );
     }
 }
