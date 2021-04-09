@@ -7,7 +7,7 @@ My simple project that I created to warm-up
 - Html, CSS and JS
 - ReactJS
 
-## Components
+## Packages
 
 - React-Helmet
 - Styled-Components
