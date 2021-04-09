@@ -4,7 +4,7 @@ My simple project that I created to warm-up
 
 ## Programming Languages
 
-- Html, CSS and JS
+- HTML, CSS and JS
 - ReactJS
 
 ## Packages
